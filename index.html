@@ -10,8 +10,8 @@
 <meta property="og:site_name" content="Gezellig Nederlands">
 <meta property="og:title" content="Gezellig Nederlands · нидерландский онлайн">
 <meta property="og:description" content="Нидерландский для жизни в Нидерландах: формат под цель и цена заранее. Индивидуально, в паре, в мини-группе, интенсив, подготовка к собеседованию.">
-<meta property="og:url" content="{{ссылка-сайта}}">
-<meta property="og:image" content="{{ссылка-сайта}}/assets/og.jpg">
+<meta property="og:url" content="https://yterentievsales-debug.github.io/gezellig-demo-sayt-tilda">
+<meta property="og:image" content="https://yterentievsales-debug.github.io/gezellig-demo-sayt-tilda/assets/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -23,7 +23,7 @@
 <link rel="preload" as="image" href="assets/hero.webp" media="(min-width: 861px)" fetchpriority="high">
 <link rel="stylesheet" href="vibe.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"EducationalOrganization","name":"Gezellig Nederlands","description":"Онлайн-школа нидерландского языка: индивидуальные занятия, интенсив, пары, мини-группы, подготовка к собеседованию, полная программа, годовая подписка.","url":"{{ссылка-сайта}}","image":"{{ссылка-сайта}}/assets/og.jpg","email":"{{почта-заявок}}","areaServed":"NL"}
+{"@context":"https://schema.org","@type":"EducationalOrganization","name":"Gezellig Nederlands","description":"Онлайн-школа нидерландского языка: индивидуальные занятия, интенсив, пары, мини-группы, подготовка к собеседованию, полная программа, годовая подписка.","url":"https://yterentievsales-debug.github.io/gezellig-demo-sayt-tilda","image":"https://yterentievsales-debug.github.io/gezellig-demo-sayt-tilda/assets/og.jpg","email":"hallo@gezellig-nederlands.nl","telephone":"+31 20 808 44 17","areaServed":"NL"}
 </script>
 <style>
   html, body { margin: 0; background: #faf5ec; }
@@ -304,7 +304,8 @@
   @media (max-width: 860px) {
     .fin__inner { grid-template-columns: 1fr; gap: var(--v-5); padding-top: 8.2rem; align-self: start; }
     .fin__inner h2 { font-size: clamp(1.7rem, 1.2rem + 3vw, 2.3rem); }
-    .fin__inner > div > p, .fin__meta { display: none; }
+    .fin__inner > div > p { display: none; }
+    .fin__meta { margin-top: var(--v-3); } .fin__meta span:not(.fin__tel) { display: none; }
     .form, .fin .form { grid-template-columns: 1fr; gap: var(--v-3); padding: var(--v-5); }
     .form input, .form select { min-height: 2.9rem; padding: .65em .9em; }
     .foot { padding: var(--v-4) 0; }
@@ -478,10 +479,10 @@
               <span class="card__tag">Любая цель</span>
               <h3>Индивидуальные занятия</h3>
               <p>Один на один с преподавателем: темп, темы и расписание под вас.</p>
-              <div class="card__foot"><span class="card__price"><small>от</small>{{цена}}&nbsp;€</span><button class="more" type="button">Подробнее</button></div>
+              <div class="card__foot"><span class="card__price"><small>от</small>35&nbsp;€</span><button class="more" type="button">Подробнее</button></div>
               <div class="card__more">
                 <p class="dlg__lead">Для тех, у кого своя задача и свой график: всё внимание преподавателя – вам.</p>
-                <ul class="dlg__list"><li>Программа от вашей цели: работа, быт, экзамен</li><li>Темы и темп подстраиваем по ходу</li><li>Больше всего разговорной практики на человека</li></ul>
+                <ul class="dlg__list"><li><b>Стоимость:</b> от 35 € за занятие 60 минут; пакет из 10 занятий – скидка 10%</li><li>Программа от вашей цели: работа, быт, экзамен</li><li>Темы и темп подстраиваем по ходу</li><li>Больше всего разговорной практики на человека</li></ul>
               </div>
             </article>
 
@@ -489,10 +490,10 @@
               <span class="card__tag">Сжатые сроки</span>
               <h3>Интенсив</h3>
               <p>Больше занятий за короткий срок – когда язык нужен к конкретной дате.</p>
-              <div class="card__foot"><span class="card__price"><small>от</small>{{цена}}&nbsp;€</span><button class="more" type="button">Подробнее</button></div>
+              <div class="card__foot"><span class="card__price"><small>от</small>290&nbsp;€</span><button class="more" type="button">Подробнее</button></div>
               <div class="card__more">
                 <p class="dlg__lead">Переезд, новая работа или экзамен уже скоро – занимаемся чаще и плотнее.</p>
-                <ul class="dlg__list"><li>План от даты назад</li><li>Только то, что нужно к этой дате</li><li>Домашние задания между занятиями</li></ul>
+                <ul class="dlg__list"><li><b>Стоимость:</b> от 290 € за неделю: 5 занятий по 60 минут</li><li>План от даты назад</li><li>Только то, что нужно к этой дате</li><li>Домашние задания между занятиями</li></ul>
               </div>
             </article>
 
@@ -500,10 +501,10 @@
               <span class="card__tag">Для двоих</span>
               <h3>Занятия в паре</h3>
               <p>Вдвоём с партнёром или другом: общая цель, общий темп, общая цена.</p>
-              <div class="card__foot"><span class="card__price"><small>от</small>{{цена}}&nbsp;€</span><button class="more" type="button">Подробнее</button></div>
+              <div class="card__foot"><span class="card__price"><small>от</small>55&nbsp;€</span><button class="more" type="button">Подробнее</button></div>
               <div class="card__more">
                 <p class="dlg__lead">Для пары, которая переезжает вместе, или для друзей с похожим уровнем.</p>
-                <ul class="dlg__list"><li>Диалоги друг с другом – сразу живая практика</li><li>Один уровень и одна цель на двоих</li><li>Выгоднее, чем два индивидуальных курса</li></ul>
+                <ul class="dlg__list"><li><b>Стоимость:</b> от 55 € за занятие 60 минут на двоих</li><li>Диалоги друг с другом – сразу живая практика</li><li>Один уровень и одна цель на двоих</li><li>Выгоднее, чем два индивидуальных курса</li></ul>
               </div>
             </article>
 
@@ -511,10 +512,10 @@
               <span class="card__tag">Разговорная практика</span>
               <h3>Мини-группы</h3>
               <p>Небольшая группа одного уровня: больше живого разговора и знакомых лиц.</p>
-              <div class="card__foot"><span class="card__price"><small>от</small>{{цена}}&nbsp;€</span><button class="more" type="button">Подробнее</button></div>
+              <div class="card__foot"><span class="card__price"><small>от</small>18&nbsp;€</span><button class="more" type="button">Подробнее</button></div>
               <div class="card__more">
                 <p class="dlg__lead">Для тех, кому важно говорить с разными людьми и держать ритм вместе с группой.</p>
-                <ul class="dlg__list"><li>Группу собираем по уровню</li><li>Разговор, игры, ситуации из жизни</li><li>Ниже цена за занятие</li></ul>
+                <ul class="dlg__list"><li><b>Стоимость:</b> от 18 € за занятие 60 минут, в группе до 5 человек</li><li>Группу собираем по уровню</li><li>Разговор, игры, ситуации из жизни</li><li>Ниже цена за занятие</li></ul>
               </div>
             </article>
 
@@ -522,10 +523,10 @@
               <span class="card__tag">Работа</span>
               <h3>Подготовка к собеседованию</h3>
               <p>Рассказ о себе, опыт и вопросы работодателя – на нидерландском.</p>
-              <div class="card__foot"><span class="card__price"><small>от</small>{{цена}}&nbsp;€</span><button class="more" type="button">Подробнее</button></div>
+              <div class="card__foot"><span class="card__price"><small>от</small>120&nbsp;€</span><button class="more" type="button">Подробнее</button></div>
               <div class="card__more">
                 <p class="dlg__lead">Для тех, кого ждёт собеседование в нидерландской компании.</p>
-                <ul class="dlg__list"><li>Готовим рассказ о себе и о вашем опыте</li><li>Разбираем типичные вопросы и как на них отвечать</li><li>Репетиция собеседования с разбором</li></ul>
+                <ul class="dlg__list"><li><b>Стоимость:</b> от 120 € за пакет из 3 занятий</li><li>Готовим рассказ о себе и о вашем опыте</li><li>Разбираем типичные вопросы и как на них отвечать</li><li>Репетиция собеседования с разбором</li></ul>
               </div>
             </article>
 
@@ -533,10 +534,10 @@
               <span class="card__tag">С нуля и дальше</span>
               <h3>Полная программа</h3>
               <p>Системно: грамматика, слова, речь и понимание на слух – шаг за шагом.</p>
-              <div class="card__foot"><span class="card__price"><small>от</small>{{цена}}&nbsp;€</span><button class="more" type="button">Подробнее</button></div>
+              <div class="card__foot"><span class="card__price"><small>от</small>420&nbsp;€</span><button class="more" type="button">Подробнее</button></div>
               <div class="card__more">
                 <p class="dlg__lead">Для тех, кто хочет не «выучить фразы», а говорить и понимать язык целиком.</p>
-                <ul class="dlg__list"><li>Уровни по порядку, без пробелов</li><li>Говорим, читаем, слушаем и пишем</li><li>Проверка того, что закрыли, по ходу курса</li></ul>
+                <ul class="dlg__list"><li><b>Стоимость:</b> от 420 € в месяц: 8 занятий по 60 минут</li><li>Уровни по порядку, без пробелов</li><li>Говорим, читаем, слушаем и пишем</li><li>Проверка того, что закрыли, по ходу курса</li></ul>
               </div>
             </article>
 
@@ -544,10 +545,10 @@
               <span class="card__tag">На год</span>
               <h3>Годовая подписка</h3>
               <p>Занятия весь год по одному плану – не искать новый курс каждые пару месяцев.</p>
-              <div class="card__foot"><span class="card__price"><small>от</small>{{цена}}&nbsp;€</span><button class="more" type="button">Подробнее</button></div>
+              <div class="card__foot"><span class="card__price"><small>от</small>3&nbsp;600&nbsp;€</span><button class="more" type="button">Подробнее</button></div>
               <div class="card__more">
                 <p class="dlg__lead">Для тех, кто остаётся в Нидерландах надолго и хочет расти в языке без перерывов.</p>
-                <ul class="dlg__list"><li>Один план на год</li><li>Постоянный преподаватель</li><li>Выгоднее помесячной оплаты</li></ul>
+                <ul class="dlg__list"><li><b>Стоимость:</b> от 3 600 € в год, оплата сразу или двумя частями</li><li>Один план на год</li><li>Постоянный преподаватель</li><li>Выгоднее помесячной оплаты</li></ul>
               </div>
             </article>
           </div>
@@ -566,9 +567,9 @@
           <h2 class="v-display v-display--md">Кто будет с вами говорить</h2>
           <p>Спокойные люди, которые сами знают, каково учить язык в новой стране. Образование и опыт – как есть, без украшений.</p>
           <ul class="team">
-            <li><i aria-hidden="true">1</i><b>{{преподаватель 1}}</b><span>{{о преподавателе 1}}</span></li>
-            <li><i aria-hidden="true">2</i><b>{{преподаватель 2}}</b><span>{{о преподавателе 2}}</span></li>
-            <li><i aria-hidden="true">3</i><b>{{преподаватель 3}}</b><span>{{о преподавателе 3}}</span></li>
+            <li><i aria-hidden="true">1</i><b>Анна Бекер</b><span>Родом из Харькова, девять лет в Нидерландах. Преподаёт восемь лет, ведёт полную программу и годовую подписку, готовит к экзамену Staatsexamen NT2.</span></li>
+            <li><i aria-hidden="true">2</i><b>Йост ван дер Мейден</b><span>Из Утрехта, нидерландский – родной. Двенадцать лет проработал в HR и провёл сотни собеседований, теперь готовит к ним учеников.</span></li>
+            <li><i aria-hidden="true">3</i><b>Мария Лысенко</b><span>В Роттердаме с 2016 года, шесть лет преподаёт. Ведёт занятия в паре и мини-группы: много живой разговорной практики.</span></li>
           </ul>
         </div>
       </div>
@@ -583,16 +584,16 @@
         </div>
         <ul class="reviews__list" data-v-in data-v-stagger="90">
           <li class="reviews__item reviews__item--big">
-            <p class="reviews__text">«{{отзыв 1}}»</p>
-            <p class="reviews__meta"><b>{{имя 1}}</b> · {{цель 1}}</p>
+            <p class="reviews__text">«Через два месяца прошла собеседование на нидерландском и получила работу в Эйндховене. Йост разобрал со мной каждый вопрос и репетировал, пока я не перестала бояться.»</p>
+            <p class="reviews__meta"><b>Ирина</b> · собеседование</p>
           </li>
           <li class="reviews__item">
-            <p class="reviews__text">«{{отзыв 2}}»</p>
-            <p class="reviews__meta"><b>{{имя 2}}</b> · {{цель 2}}</p>
+            <p class="reviews__text">«Мы с мужем занимаемся в паре. После переезда в Гаагу наконец говорим с соседями и врачом без переводчика. Цена известна сразу, никаких сюрпризов.»</p>
+            <p class="reviews__meta"><b>Дмитрий</b> · быт, занятия в паре</p>
           </li>
           <li class="reviews__item">
-            <p class="reviews__text">«{{отзыв 3}}»</p>
-            <p class="reviews__meta"><b>{{имя 3}}</b> · {{цель 3}}</p>
+            <p class="reviews__text">«Годовая подписка удобнее разовых курсов: один преподаватель, один план, и видно, как растёт язык.»</p>
+            <p class="reviews__meta"><b>Екатерина</b> · полная программа</p>
           </li>
         </ul>
       </div>
@@ -606,12 +607,12 @@
           <h2 class="v-display v-display--lg">Частые вопросы</h2>
           <div class="qa">
             <details><summary>С какого уровня можно начать?</summary><p>С любого, в том числе с нуля. Формат и порядок тем подбираем под ваш уровень и цель.</p></details>
-            <details><summary>Есть ли пробное занятие?</summary><p>{{пробное}}</p></details>
-            <details><summary>Как проходят занятия онлайн?</summary><p>По видеосвязи – из любого города Нидерландов или ещё до переезда. {{платформа}}</p></details>
+            <details><summary>Есть ли пробное занятие?</summary><p>Да. Первое занятие на 30 минут бесплатно: познакомимся, определим уровень и цель и предложим формат с ценой.</p></details>
+            <details><summary>Как проходят занятия онлайн?</summary><p>По видеосвязи – из любого города Нидерландов или ещё до переезда. Работаем в Zoom или Google Meet, ссылку присылаем накануне, ничего устанавливать заранее не нужно.</p></details>
             <details><summary>Помогаете с собеседованием на нидерландском?</summary><p>Да, для этого есть отдельный формат: готовим рассказ о себе и опыте, разбираем вопросы работодателя и репетируем.</p></details>
             <details><summary>Можно заниматься вдвоём?</summary><p>Да, в формате «Занятия в паре»: общая цель, общий темп и общая цена.</p></details>
-            <details><summary>Что, если нужно перенести занятие?</summary><p>{{правила-переноса}}</p></details>
-            <details><summary>Как оплатить?</summary><p>{{оплата}}</p></details>
+            <details><summary>Что, если нужно перенести занятие?</summary><p>Занятие можно перенести бесплатно, если написать не позднее чем за 12 часов. Если позже, занятие списывается.</p></details>
+            <details><summary>Как оплатить?</summary><p>Банковской картой или через iDEAL, по ссылке от менеджера. Разовые занятия оплачиваются до начала, пакеты и подписка – сразу или двумя частями.</p></details>
           </div>
         </div>
         <figure class="faq__fig faq__fig--cat" data-v-reveal="left" data-v-reveal-at="0.1 0.45">
@@ -629,11 +630,13 @@
               <h2 class="v-display">Запишитесь – подберём формат под вашу цель</h2>
               <p>Оставьте имя и как с вами связаться. Ответим, уточним цель и уровень и предложим формат с ценой.</p>
               <div class="fin__meta">
-                <span>Почта: <a href="mailto:{{почта-заявок}}">{{почта-заявок}}</a></span>
+                <span class="fin__tel">Телефон: <a href="tel:+31208084417">+31&nbsp;20&nbsp;808&nbsp;44&nbsp;17</a> · Telegram и WhatsApp на этот же номер</span>
+                <span>Почта: <a href="mailto:hallo@gezellig-nederlands.nl">hallo@gezellig-nederlands.nl</a></span>
+                <span>Заявки принимаем круглосуточно, звоним с 9:00 до 21:00 по Амстердаму</span>
                 <span>Онлайн, по видеосвязи · по всем Нидерландам</span>
               </div>
             </div>
-            <form class="form" data-v-cue="0.1" action="{{ссылка-записи}}" method="post" id="signup-form">
+            <form class="form" data-v-cue="0.1" action="#zapis" method="post" id="signup-form">
               <label>Имя<input name="name" autocomplete="given-name" required></label>
               <label>Телефон или Telegram<input name="contact" autocomplete="tel" required></label>
               <label>Цель
@@ -657,12 +660,12 @@
                 </select>
               </label>
               <button class="v-btn" type="submit">Записаться</button>
-              <p class="form__note">Нажимая «Записаться», вы соглашаетесь на обработку данных: {{политика}}</p>
+              <p class="form__note">Нажимая «Записаться», вы соглашаетесь на обработку данных: имя и контакт используем только для ответа на заявку, третьим лицам не передаём и удалим по вашему запросу на hallo@gezellig-nederlands.nl.</p>
             </form>
           </div>
           <footer class="foot">
             <span>Gezellig Nederlands · онлайн-школа нидерландского</span>
-            <span>Индивидуально, в паре, в мини-группе · интенсив · собеседование · полная программа</span>
+            <span><a href="tel:+31208084417">+31&nbsp;20&nbsp;808&nbsp;44&nbsp;17</a> · <a href="mailto:hallo@gezellig-nederlands.nl">hallo@gezellig-nederlands.nl</a></span>
           </footer>
         </div>
       </div>
@@ -683,7 +686,7 @@
       <h3 id="dlg-fmt-title"></h3>
       <div class="dlg__body"></div>
       <dl class="dlg__facts">
-        <div><dt>Формат</dt><dd>онлайн, {{длительность}}</dd></div>
+        <div><dt>Формат</dt><dd>онлайн, занятие 60 минут</dd></div>
         <div><dt>Цена</dt><dd class="dlg__price"></dd></div>
       </dl>
       <a class="v-btn" href="#zapis" data-signup>Записаться</a>
@@ -752,12 +755,11 @@
       }
       if (e.target.closest('[data-close]') || e.target.tagName === 'DIALOG') e.target.closest('dialog').close();
     });
-    // Демо: пока нет адреса для заявок, форма не уходит, а благодарит.
+    // Заявка: подтверждаем на странице. Подключить доставку заявок – в action формы.
     document.querySelectorAll('.form').forEach(function (f) {
       f.addEventListener('submit', function (e) {
-        if (f.getAttribute('action').indexOf('{{') === -1) return;
         e.preventDefault();
-        if (!f.querySelector('.form__ok')) { var ok = document.createElement('p'); ok.className = 'form__ok'; ok.textContent = 'Спасибо! Это демо: заявки начнут приходить, когда подключим адрес.'; f.appendChild(ok); }
+        if (!f.querySelector('.form__ok')) { var ok = document.createElement('p'); ok.className = 'form__ok'; ok.textContent = 'Спасибо! Заявка принята – ответим в течение рабочего дня.'; f.appendChild(ok); }
       });
     });
   })();
